@@ -1,54 +1,29 @@
 html, body {
   height: 100%;
-  font-family: 'Open Sans', sans-serif
+  font-family: 'Open Sans', sans-serif;
+  color: white;
 }
 
 body {
   display: flex;
   align-items: center;
   justify-content: flex-center;
-  flex-direction: column
+  flex-direction: column;
+  background-color: black;
 }
 
-#message {
-  display: flex;
-}
-
-.board {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.board div {
-  color: green;
-  font-size: 2rem;
-  width: 75px;
-  height: 75px;
-  border: 1px #ccc dotted;
-  border-radius: 10%;
+button {
   background-color: white;
-  margin: 3px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  color: black;
+  width: 200px;
+  height: 50px;
+  margin: 15px;
 }
 
-.board div:hover {
+.quote {
   background-color: white;
-}
-
-div.mine, div.mine:hover {
-  background: no-repeat center/60% url("images/bomb.svg") crimson;
-}
-
-div.hidden {
-  background: #eee;
-}
-
-div.hidden:hover {
-  background: #ccc;
-}
-
-div.marked, div.marked:hover {
-  background: no-repeat center/60% url("images/mark.svg") deepskyblue;
+  color: black;
+  width: 500px;
+  height: 200px;
+  margin: 15px;
 }
