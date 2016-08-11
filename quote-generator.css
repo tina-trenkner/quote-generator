@@ -12,7 +12,9 @@ body {
   background-color: black;
 }
 
-button {
+#button {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
   background-color: white;
   color: black;
   width: 200px;
@@ -22,6 +24,7 @@ button {
 
 .quote {
   background-color: white;
+  text-align: center;
   color: black;
   width: 500px;
   height: 200px;
