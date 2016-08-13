@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ron Swanson quote generator</title>
+    <title>Generic quote generator</title>
     <link rel="stylesheet" href="quote-generator.css">
     <script src="quote-generator.js"></script>
+    <script src="jquery-3.1.0.js"></script>
   </head>
   <body>
     <div id="title"></div>
-    <h2>Ron Swanson quote generator</h2>
-    <h3>Click below for wisdom from Pawnee's favorite city employee</h3>
-    <button type="button" id="button">"I'm Ron Swanson"</button>
-    <div class="quote">"Clear alcohol is for rich women on diets." </div>
+    <h2>Generic quote generator</h2>
+    <h3>Some inspo for your day</h3>
+    <button id="getQuote" onclick="myFunction()">Gimme dat inspo</button>
+    <div id="quote">"Clear alcohol is for rich women on diets." </div>
+    <button id="getQuote" onclick="myFunction()">Tweet this inspo</button>
+    <script>
+    function myFunction() {
+    document.getElementById("quote").innerHTML = TK TK TK TK ;
+    }
+</script>
   </body>
 </html>
