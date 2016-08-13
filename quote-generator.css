@@ -1,6 +1,7 @@
-html, body {
+html, body, button {
   height: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Avenir', sans-serif;
+  text-transform: uppercase;
   color: white;
 }
 
@@ -13,7 +14,7 @@ body {
 }
 
 #getQuote {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Avenir', sans-serif;
   font-size: 16px;
   background-color: white;
   color: black;
