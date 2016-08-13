@@ -1,10 +1,18 @@
-var xhr = new XMLHttpRequest();
-xhr.open("GET", "https://andruxnet-random-famous-quotes.p.mashape.com/", false);
-xhr.send();
+var qurl = "http://api.forismatic.com/api/1.0/?format=jsonp&method=getQuote&jsonp=?&lang=en";
+var turl = "https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=";
+$("button").on("click", function() {
+  getQuote();
+});
 
-
-function myFunction() {
-document.getElementById("quote").innerHTML = TK TK TK TK ;
+function getQuote() {
+  $.getJSON(qurl, function(response) {
+    $("p").html(response.quoteText);
+    $("i.author").html(response.quoteAuthor);
+    $("#tweetlink").attr("href",
+      turl + response.quoteText + " ― " + response.quoteAuthor);
+  });
 }
+getQuote();
 
-//When we get this info back, how do I code it into my HTML?
+
+/* code cribbed from http://codepen.io/roessland/pen/bedjGB */
