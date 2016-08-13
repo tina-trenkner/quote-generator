@@ -1,12 +1,10 @@
 var xhr = new XMLHttpRequest();
-xhr.open("GET", 'https://ron-swanson-quotes.herokuapp.com/v2/quotes'; false)
+xhr.open("GET", "https://andruxnet-random-famous-quotes.p.mashape.com/", false);
 xhr.send();
 
-console.log(xhr.status):
-console.log(xhr.statusText);
 
-document.getElementsByClass("button").addEventListener("click", myFunction);
-
-var myFunction = function {
-  document.getElementsByClass("quote").innerHTML = /* something from quote API;*/
+function myFunction() {
+document.getElementById("quote").innerHTML = TK TK TK TK ;
 }
+
+//When we get this info back, how do I code it into my HTML?
