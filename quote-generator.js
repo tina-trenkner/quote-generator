@@ -1,18 +1,26 @@
-var qurl = "http://api.forismatic.com/api/1.0/?format=jsonp&method=getQuote&jsonp=?&lang=en";
-var turl = "https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=";
-$("button").on("click", function() {
-  getQuote();
-});
+var showQuote = function () {
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", "https://andruxnet-random-famous-quotes.p.mashape.com/", true);
+  xhr.setRequestHeader("X-Mashape-Authorization", "K1FgNiR6aRmshUIfTmKaMn9WxgLgp1PO0oLjsnTKF0VeCym0rK");
+  xhr.onload = function () {
+        var responseText = xhr.responseText
+         document.getElementById("quote").innerHTML = responseText;
+    }
+  xhr.send();
+};
 
-function getQuote() {
-  $.getJSON(qurl, function(response) {
-    $("p").html(response.quoteText);
-    $("i.author").html(response.quoteAuthor);
-    $("#tweetlink").attr("href",
-      turl + response.quoteText + " ― " + response.quoteAuthor);
-  });
-}
-getQuote();
+
+
+
+
+
+
+
+
+
 
 
 /* code cribbed from http://codepen.io/roessland/pen/bedjGB */
+
+
+/* document.getElementById("button").addEventListener("click", getQuote);
